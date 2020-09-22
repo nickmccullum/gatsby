@@ -4,8 +4,8 @@ import Layout from '../components/Layout.js';
 
 export default function HomePage() {
   return (
-    <Layout>
+    <>
       <p>Hey! I'm the home page</p>
-    </Layout>
+    </>
   );
 }

@@ -4,8 +4,8 @@ import Layout from '../components/Layout.js';
 
 export default function BeersPage() {
   return (
-    <Layout>
+    <>
       <p>Beers</p>
-    </Layout>
+    </>
   );
 }
