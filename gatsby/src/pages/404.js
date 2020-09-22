@@ -1,9 +1,10 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 export default function FourOhFour() {
   return (
-    <div>
+    <Layout>
       <p>No page found.</p>
-    </div>
+    </Layout>
   );
 }
