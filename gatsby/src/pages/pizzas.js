@@ -3,10 +3,10 @@ import { graphql } from 'gatsby';
 import PizzaList from '../components/PizzaList';
 
 export default function PizzasPage({ data }) {
+  const pizzas = data.pizzas.nodes;
   return (
     <>
-      <PizzaList />
-      <p>Hey! There are {data.pizzas.nodes.length} pizzas available.</p>
+      <PizzaList pizzas={pizzas} />
     </>
   );
 }
