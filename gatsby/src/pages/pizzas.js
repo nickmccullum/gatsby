@@ -1,17 +1,17 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-export default function PizzasPage() {
+export default function PizzasPage({ data }) {
   return (
     <>
-      <p>Beers</p>
+      <p>Hey! There are {data.pizzas.nodes.length} pizzas available.</p>
     </>
   );
 }
 
 export const query = graphql`
   query PizzaQuery {
-    allSanityPizza {
+    pizzas: allSanityPizza {
       nodes {
         name
         id
